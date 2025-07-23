@@ -1,0 +1,11 @@
+torch==2.2.1
+torchtext==0.17.1
+tqdm==4.66.1
+numpy==1.25.2
+pandas==2.0.3
+datasets==2.19.0
+Django==5.0
+django-crispy-forms==2.1
+Pillow==10.0.0
+matplotlib==3.7.2
+collection==0.1.6

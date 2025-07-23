@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#loginBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logoutBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

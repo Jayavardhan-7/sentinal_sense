@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentinal Sense</title>
+
+</head>
+<style>
+	body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+height: 60px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#loginBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logoutBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  
+  
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body{
+	background-image:url("{% static 'images/bg.jpg' %}");
+	background-repeat: no-repeat;
+  background-size: 100% 180%;
+  
+	
+}
+
+
+</style>
+<body>
+<nav class="top-nav">
+  <span>Welcome, To Sentinal Sense!</span>
+  
+</nav>
+<main>
+  <center>
+    <h1 style="color:#F7F9F9 ">
+      The "Sentinel Sense" web application revolutionizes sentiment analysis with its advanced machine learning model, incorporating cutting-edge NLP techniques for precise sentiment predictions. This model is highly adaptable, capable of adjusting to different industries and contexts, ensuring that businesses can fine-tune its performance to meet specific needs. Whether dealing with social media comments, customer reviews, or feedback forms, the application's scalability and real-time analysis capabilities make it versatile across various data sources.
+    </h1>
+  <form action="results" > <!--action helps to link to another page..-->
+    <button id="getInBtn" type="submit" >GET IN !</button> 
+  </form> 
+  <br></br>
+</center>
+</main>
+
+</body>
+</html>

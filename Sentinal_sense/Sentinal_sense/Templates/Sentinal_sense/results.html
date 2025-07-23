@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website</title>
+
+</head>
+<style>
+	body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
+
+#loginBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#logoutBtn {
+  background-color: #f44336;
+  color: white;
+}
+.row em { 
+  color: red; 
+  font-weight: bolder; 
+  font-style: italic; 
+}
+
+main {
+  padding: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body{
+	background-image:url("{% static 'images/bg.jpg' %}");
+	background-repeat: no-repeat;
+  background-size: 100% 400%;
+
+  
+	
+}
+
+</style>
+<body>
+<nav class="top-nav">
+  <span>Welcome, User!</span>
+  
+</nav>
+<main>
+  
+  <form action="result">
+    <center>
+    <table >
+      <tr>
+        <td style="color:#F7F9F9 ">
+          Enter your text:--
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" name="text1" size="70" style="height: 40px;"></td>
+      </tr>
+      <tr>
+        <td align="center">
+          <input class="button" type="submit" value="PREDICT"> 
+        </td>
+      </tr>
+      <tr>
+        <td align = "center" style="color:#F7F9F9 ">{{output}}</td>
+      </tr>
+      
+    </table>
+    </center>
+  </form>
+
+  
+</main>
+
+</body>
+</html>
