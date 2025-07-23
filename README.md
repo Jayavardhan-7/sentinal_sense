@@ -38,3 +38,66 @@
 ```bash
 git clone https://github.com/your-username/Sentinel_Sense.git
 cd Sentinel_Sense
+```
+### 2. Set up the virtual environment
+
+
+Create virtual environment
+```bashpython -m venv venv```
+
+ Activate virtual environment
+ For Windows:
+```bash venv\Scripts\activate  ```
+
+For macOS/Linux:
+```bash source venv/bin/activat e```
+### 3. Install the dependencies
+
+```bash pip install -r requirements.txt```
+### 4. Apply migrations
+
+python manage.py migrate
+### 5. Run the development server
+
+```bash python manage.py runserver```
+Open your browser and go to:
+http://127.0.0.1:8000
+
+### 📦 Project Structure
+
+Sentinel_Sense/
+│
+├── app/                   # Main Django app
+├── sentiment_model/       # Transformer-based sentiment analysis logic
+├── movie_recommender/     # Movie filtering and suggestion logic
+├── templates/             # HTML templates for frontend
+├── static/                # Static files like CSS, JS, images
+├── manage.py              # Django project manager
+├── requirements.txt       # Python dependencies
+└── README.md              # This file
+
+🧠 Future Enhancements
+🎙️ Voice-based sentiment input
+
+🌐 Support for multiple languages
+
+🤝 Collaborative filtering with sentiment fusion
+
+📈 Real-time feedback and rating integration
+
+🤝 Contributing
+Contributions are welcome!
+
+Fork the repo
+
+Create your branch (git checkout -b feature/your-feature)
+
+Commit your changes (git commit -m 'Add feature')
+
+Push and open a pull request
+
+🛡️ License
+This project is licensed under the MIT License.
+
+📬 Contact
+Made with ❤️ by P. Sai Jayavardhan
